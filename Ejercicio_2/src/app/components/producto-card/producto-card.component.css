@@ -1,0 +1,34 @@
+/* src/app/product-list/product-list.component.css */
+.lista-productos ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .lista-productos li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .lista-productos li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Si el producto está en oferta se resalta en verde */
+  .on-sale {
+    color: green;
+  }
+  
+  /* Se puede aplicar un estilo distinto si no hay stock */
+  .not-in-stock {
+    opacity: 0.6;
+  }
+  
+  /* Estilo para la etiqueta "Agotado" */
+  .agotado {
+    color: red;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  

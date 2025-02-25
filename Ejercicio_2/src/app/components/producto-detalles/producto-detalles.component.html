@@ -1,0 +1,18 @@
+<!-- src/app/product-detail/product-detail.component.html -->
+<div class="detalles-prouducto">
+    <h4>{{ producto.name }}</h4>
+    <!-- Se muestra la imagen del producto o una imagen por defecto -->
+    <img [src]="producto.imageUrl || 'https://via.placeholder.com/150'" 
+         alt="{{ producto.name }}" class="img-producto ">
+    <p>Precio: ${{ producto.price }}</p>
+    
+    
+    <p *ngIf="producto.inStock; else outOfStock">En stock</p>
+    <ng-template #outOfStock>
+      <p class="agotado">Agotado</p>
+    </ng-template>
+    
+    <!-- Se indica si el producto está en oferta -->
+    <p *ngIf="producto.onSale" class="oferta">¡Oferta!</p>
+  </div>
+  

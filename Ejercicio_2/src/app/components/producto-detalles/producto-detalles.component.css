@@ -1,0 +1,24 @@
+/* src/app/product-detail/product-detail.component.css */
+.detalles-prouducto {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 4px;
+  }
+  
+  .img-producto {
+    max-width: 150px;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .agotado {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .oferta {
+    color: green;
+    font-weight: bold;
+  }
+  
